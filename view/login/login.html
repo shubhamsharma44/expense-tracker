@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form id="loginForm" >
+        <label for="email">Enter your email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email..">
+<br>
+        <label for="password">Enter password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password..">
+
+        <button id="signupBtn" type="submit">Log in</button>
+    </form>
+    
+    <p>New User ?<a href="../signup/signup.html"> - Sign up Now</a></p>
+    <div id="loginMsg"></div> 
+
+    <button id="forgotPasswrd" onclick="sendForm()">Forgot password?</button>
+    <form id="emailForm" onsubmit="submitEmailForm(event)" style="display: none;">
+        <input type="email" id="emailForgt" placeholder="Enter your email..">
+        <button id="sendEmailForm" >Send email</button>
+    </form>
+
+    <script src="login.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>

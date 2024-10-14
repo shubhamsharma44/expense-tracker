@@ -1,0 +1,142 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#expHead {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#expenseList {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#expenseList li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* #premiumSection, #leaderboardSection, #downloadSection {
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+/*  */
+/* #premium, #leaderButton, #downloadBtn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#premium:hover, #leaderButton:hover, #downloadBtn:hover {
+    background-color: #218838; */
+ */
+
+#leaderBoard {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#leaderBoard li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#recordsDiv {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#paginateExpense {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#paginateExpense button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#paginateExpense button:hover {
+    background-color: #0056b3;
+}
+
+#paginateExpense button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#loginMsg {
+    color: red;
+    margin-top: 10px;
+}
+#forgotPasswrd {
+    background-color: transparent;
+    position: fixed;
+    border: none;
+    color: #3169ae;
+    text-decoration: underline;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    bottom: 20px;
+    left: 50%;
+    align-items: center;
+}
+#forgotPasswrd:hover {
+    color: #0056b3;
+}

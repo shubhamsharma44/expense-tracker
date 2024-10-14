@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Expenses</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form id="loginForm" onsubmit="submitForm(event)">
+        <label for="amount">Add expense amount : </label>
+        <input type="number" name="amount" id="amount" placeholder="Enter expense amount.." required><br>
+
+        <label for="description">Add Description : </label>
+        <input type="text" name="description" id="description" placeholder="Enter Description.." required><br>
+
+        <label for="category">Choose a Category :</label>
+        <select id="category" name="category" required>
+            <option value="choose">Choose..</option>
+            <option value="fuel">Fuel</option>
+            <option value="food">Food</option>
+            <option value="rent">Rent</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="travel">Travel</option>
+            <option value="more">More..</option>
+        </select><br>
+        
+        <button type="submit">Add Expense</button>
+    </form>
+
+    <p>
+        <a href="../login/login.html">Logout</a> |  
+        <a href="../signup/signup.html">Signout</a>
+    </p>
+    <h3 id="success"></h3>
+
+    <h2 style="display: none;" id="expHead">Expenses</h2>
+    <ul id="expenseList"></ul>
+
+    <div id="premiumSection">
+        <h2 id="premiumMsg"></h2>
+        <button id="premium">Buy Premium</button>
+    </div>
+
+    <div id="leaderboardSection">
+        <button id="leaderButton">LeaderBoard</button>
+        <h3 id="leaderMessage">LeaderBoard</h3>
+        <ul id="leaderBoard"></ul>
+    </div>
+    
+    <div id="downloadSection">
+        <button id="downloadBtn">Download File</button>
+    </div>
+
+    <label for="pageSize">Page Size:</label>
+    <select id="pageSize" name="pageSize" onchange="updatePageSize()">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+    </select>
+    
+    <div id="recordsDiv" style="display: none;">
+        <h3>Previous downloads</h3>
+        <ul id="records"></ul>
+    </div>
+
+    <div id="paginateExpense" ></div>
+
+    <script src="expense.js"></script> 
+    <script  src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+</body>
+</html>

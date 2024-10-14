@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <form onsubmit="submitForm(event)" >
+        <label for="name">Enter your name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name..">
+<br>
+        <label for="email">Enter your email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email..">
+<br>
+        <label for="password">Enter password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter password..">
+
+        <button id="signupBtn" type="submit">Sign up</button>
+    </form>
+    <p>Already have an account<a href="../login/login.html"> - Login Now</a></p>
+
+    <div id="signupMsg"></div>
+
+    <script src="signup.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
